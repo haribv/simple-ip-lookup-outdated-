@@ -55,20 +55,6 @@ if __name__ == '__main__':
 
 def prCyan(skk): print("\033[96m {}\033[00m" .format(skk)) 
 
-banner = r'''                                                                                          
-       |---|
-      /     \
-     |  /\/\ |
-     |    -  |
-      \     /
-       |---|
-
-    lose my heart <3
-
-'''
-
-prCyan(banner)
-
 from time import sleep
 import sys
 import os
