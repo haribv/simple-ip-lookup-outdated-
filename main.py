@@ -3,7 +3,10 @@ import sys
 import os 
   
 def load_animation(): 
-  
+
+    print("You have some limit in the program because the ipapi.co have some security shit and blocked you!")
+    print("")
+    time.sleep(5)
     load_str = "loading..."
     ls_len = len(load_str) 
   
@@ -56,7 +59,7 @@ if __name__ == '__main__':
 def prCyan(skk): print("\033[96m {}\033[00m" .format(skk)) 
 
 
-from time import sleep
+import time
 import sys
 import os
 
@@ -67,8 +70,8 @@ def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
 def prRed(skk): print("\033[91m {}\033[00m" .format(skk)) 
 
 
-prGreen(" 1 | Ip Address Lookup  ")
-prGreen(" 2 | Exit  ")
+prGreen(" <1> Ip Address Lookup  ")
+prGreen(" <2> Exit  ")
 print("")
 option = input(''' ┌─[ select one ]─[~]
  └──╼ # ''')
@@ -85,12 +88,12 @@ while True:
       track = get(f'https://ipapi.co/{ip}/json/')
       print("")
       print(track.json())
+      # auto exit
       import sys
-      time.sleep(15)
+      time.sleep(9.5)
       sys.exit()
-  else:
+  if option == '2':
 
       prRed("Closing....")
-      import sys
       sys.exit()
       
